@@ -7,6 +7,8 @@
   gap: var(--spacing-xs);
   font-size: var(--font-size-sm);
   z-index: 100;
+  background: var(--color-bg);
+  padding: var(--spacing-xs);
 }
 
 .text {
@@ -28,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .refreshButton:hover {
@@ -38,5 +41,35 @@
   .credit {
     top: var(--spacing-md);
     right: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .credit {
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    font-size: 10px;
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .text {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .refreshButton {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text {
+    display: none;
   }
 }

@@ -86,3 +86,38 @@
   font-size: var(--font-size-sm);
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .textContent {
+    font-size: var(--font-size-sm);
+    -webkit-line-clamp: 6;
+  }
+
+  .linkUrl {
+    font-size: 10px;
+  }
+
+  .pdfName {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .textContent {
+    -webkit-line-clamp: 4;
+  }
+
+  .textPreview {
+    padding: var(--spacing-sm);
+  }
+
+  .linkPreview {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+
+  .pdfPreview {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-xs);
+  }
+}

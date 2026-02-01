@@ -9,3 +9,15 @@
     padding: 0 var(--spacing-md);
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+}

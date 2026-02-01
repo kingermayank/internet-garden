@@ -2,7 +2,7 @@
   display: flex;
   gap: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--spacing-lg);
+  flex-shrink: 0;
 }
 
 .button,
@@ -14,6 +14,7 @@
   cursor: pointer;
   padding: var(--spacing-xs) 0;
   color: var(--color-text);
+  white-space: nowrap;
 }
 
 .button {
@@ -28,4 +29,22 @@
   opacity: 1;
   border-bottom: 2px solid var(--color-border);
   margin-bottom: -1px;
+}
+
+@media (max-width: 480px) {
+  .toggle {
+    gap: var(--spacing-sm);
+  }
+
+  .button,
+  .active {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .toggle {
+    gap: var(--spacing-xs);
+  }
 }

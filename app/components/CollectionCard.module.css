@@ -35,3 +35,23 @@
   margin: 0;
   color: #666;
 }
+
+@media (max-width: 480px) {
+  .name {
+    font-size: var(--font-size-sm);
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .count {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    gap: 4px;
+  }
+}
